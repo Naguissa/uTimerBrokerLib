@@ -1,43 +1,36 @@
 # STILL UNDER DEVELOPMENT!!!
 
 
-# Arduino, ESP8266 and STM32 7-segment multiplexed displays library - uSevenSegmentLib #
-
-Master status:   [![Build Status](https://travis-ci.org/Naguissa/uSevenSegmentLib.svg?branch=master)](https://travis-ci.org/Naguissa/uSevenSegmentLib)
+# Arduino IDE Timer broker for uTimerLib - uTimerBrokerLib
 
 
 ## What is this repository for? ##
 
 Broker library tomanage multiple interrupts with uTimerLib.
 
-It allows to attach multipleinterrupts to uTimerLib, but at the cost of reducing resolution to miliseconds instead nanoseconds.
+It allows to attach multiple interrupts to uTimerLib, but at the cost of reducing resolution to miliseconds instead nanoseconds.
 
 ## Important: Dependencies ##
 
 This library requires uTimerLib libary; it's available on IDE Library Manager and also here:
 
-https://github.com/Naguissa/uTimerLib
-https://github.com/Naguissa/uTimerLib/releases
+https://github.com/Naguissa/uTimerBrokerLib
+https://github.com/Naguissa/uTimerBrokerLib/releases
 
 
 
 ## How do I get set up? ##
 
-You can get it from Arduino libraries directly, searching by uSevenSegmentLib.
-
 For manual installation:
 
- * Get the ZIP from releases link: https://github.com/Naguissa/uSevenSegmentLib/releases
- * Rename to uSevenSegmentLib.zip
+ * Get the ZIP from releases link: https://github.com/Naguissa/uTimerBrokerLib/releases
+ * Rename to uTimerBrokerLib.zip
  * Install library on Arduino
 
 
 ## Examples ##
 
 Included on example folder, available on Arduino IDE.
-
- - Three 7-segments counter example, that counts from 0 to 255.
- - One example to test connections to a 7-segment module; lights sequently from "a" to "h" segments. This example doesn't use library functions.
 
 
 ## Who do I talk to? ##
