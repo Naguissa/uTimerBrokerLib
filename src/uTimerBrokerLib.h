@@ -23,7 +23,7 @@
 	#define _uTimerBrokerLib_
 
 	#include "Arduino.h"
-	#include "uTimerBrokerLib.h"
+	#include "uTimerLib.h"
 
 
     #define UTIMERBROKERLIB_ERROR 255
@@ -37,27 +37,22 @@
         #define UTIMERBROKERLIB_MAXHOOKS 12
     #endif
 
-	class uTimerBrokerLib {
-		public:
-			uint8_t add(void *);
-			uint8_t set(const void *, const uint8_t, const uint32_t);
-			uint8_t clear(uint8_t);
-			uint8_t clear(void *);
-			static void interrupt(void);
-			uTimerBrokerLib* init();
+    class uTimerBrokerLib {
+        public:
+            uint8_t add(void (* )(), const int32_t);
+            uint8_t set(void (* )(), const uint8_t, const int32_t);
+            uint8_t clear(uint8_t);
+            uint8_t clear(void (* )());
+            static void interrupt(void);
+            static uTimerBrokerLib instance(void);
 
-		private:
-			// Constructor
-			uTimerBrokerLib();
-			static uTimerBrokerLib *_instance;
-						
-			void _interrupt(void);
-
-            void* _functions[UTIMERBROKERLIB_MAXHOOKS];
-            uint32_t _intervals[UTIMERBROKERLIB_MAXHOOKS];
-            uint32_t _left[UTIMERBROKERLIB_MAXHOOKS];
+        private:
+            // Constructor
+            uTimerBrokerLib();
+            static uTimerBrokerLib *_instance;
+            static void (*_functions[UTIMERBROKERLIB_MAXHOOKS])();
+            static int32_t _intervals[UTIMERBROKERLIB_MAXHOOKS];
+            static volatile int32_t _left[UTIMERBROKERLIB_MAXHOOKS];
 	};
-	
-	extern uTimerBrokerLib TimerBrokerLib;	
 #endif
 

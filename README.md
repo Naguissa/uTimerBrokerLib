@@ -1,25 +1,37 @@
-# STILL UNDER DEVELOPMENT!!!
-
-
 # Arduino IDE Timer broker for uTimerLib - uTimerBrokerLib
 
 
-## What is this repository for? ##
+## What is this repository for?
 
-Broker library tomanage multiple interrupts with uTimerLib.
+Broker library to manage multiple interrupts with uTimerLib.
 
 It allows to attach multiple interrupts to uTimerLib, but at the cost of reducing resolution to miliseconds instead nanoseconds.
 
-## Important: Dependencies ##
+## Important: Dependencies
 
 This library requires uTimerLib libary; it's available on IDE Library Manager and also here:
 
-https://github.com/Naguissa/uTimerBrokerLib
-https://github.com/Naguissa/uTimerBrokerLib/releases
+https://github.com/Naguissa/uTimerLib
+https://github.com/Naguissa/uTimerLib/releases
 
 
+## Usage ##
 
-## How do I get set up? ##
+1st we get a class instance:
+
+**uTimerBrokerLib TimerBrokerLib = uTimerBrokerLib::instance();**
+
+
+You have these methods:
+ - **uTimerBrokerLib.add(callback_function, miliseconds);** : callback_function will be called each miliseconds. Adds it on 1st free slot.
+ - **uTimerBrokerLib.set(callback_function, slot, miliseconds);** : callback_function will be called each miliseconds. Adds it on indicated slot. If any exists will be overwritten.
+ - **uTimerBrokerLib.clear(slot);** : Clears given slot.
+ - **uTimerBrokerLib.clear(callback_function);** : Search for callback function and clears that slot if found.
+
+
+## How do I get set up?
+
+You can get it from Arduino libraries directly, searching by uTimerBrokerLib.
 
 For manual installation:
 
