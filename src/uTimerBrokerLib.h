@@ -11,7 +11,7 @@
  * @see <a href="https://github.com/Naguissa/uTimerBrokerLib">https://github.com/Naguissa/uTimerBrokerLib</a>
  * @see <a href="https://github.com/Naguissa/uTimerLib">https://github.com/Naguissa/uTimerLib</a> - Needed dependecy
  * @see <a href="mailto:naguissa@foroelectro.net">naguissa@foroelectro.net</a>
- * @version 1.0.0
+ * @version 1.0.1
  */
 /** \file uTimerBrokerLib.h
  *   \brief uTimerBrokerLib header file
