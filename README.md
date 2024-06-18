@@ -12,6 +12,7 @@ It allows to attach multiple interrupts to uTimerLib, but at the cost of reducin
 This library requires uTimerLib libary; it's available on IDE Library Manager and also here:
 
 https://github.com/Naguissa/uTimerLib
+
 https://github.com/Naguissa/uTimerLib/releases
 
 
@@ -40,19 +41,27 @@ For manual installation:
  * Install library on Arduino
 
 
-## Examples ##
+## Documentation and extras
+
+You can find all documentation and extras in this repository: https://github.com/Naguissa/uTimerBrokerLib_doc_and_extras
+
+You can read documentation online here: https://naguissa.github.io/uTimerBrokerLib_doc_and_extras/
+
+
+
+## Examples
 
 Included on example folder, available on Arduino IDE.
 
 
-## Who do I talk to? ##
+## Who do I talk to?
 
  * [Naguissa](https://github.com/Naguissa)
  * https://www.foroelectro.net
  * https://www.naguissa.com
 
 
-## Contribute ##
+## Contribute
 
 Any code contribution, report or comment are always welcome. Don't hesitate to use GitHub for that.
 
