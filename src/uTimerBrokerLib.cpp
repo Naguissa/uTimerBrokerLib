@@ -11,7 +11,7 @@
  * @see <a href="https://github.com/Naguissa/uTimerBrokerLib">https://github.com/Naguissa/uTimerBrokerLib</a>
  * @see <a href="https://github.com/Naguissa/uTimerLib">https://github.com/Naguissa/uTimerLib</a> - Needed dependecy
  * @see <a href="mailto:naguissa@foroelectro.net">naguissa@foroelectro.net</a>
- * @version 1.0.1
+ * @version 1.0.2
  */
 #include <Arduino.h>
 #include "uTimerBrokerLib.h"
@@ -92,6 +92,7 @@
     /**
      * \brief Clears a given slot
      *
+     * @param slot to be cleared
      * @return Slot cleared. UTIMERBROKERLIB_ERROR if not found
      */
     uint8_t uTimerBrokerLib::clear(const uint8_t slot) {
@@ -106,7 +107,7 @@
     /**
      * \brief Removes 1s appearance of give function from slots
      *
-     * @param userfunction function pointer to be called
+     * @param userfunction function pointer to be cleared
      * @return Slot cleared. UTIMERBROKERLIB_ERROR if not found
      */
     uint8_t uTimerBrokerLib::clear(void (* userfunction)()) {

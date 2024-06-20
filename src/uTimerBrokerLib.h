@@ -11,7 +11,7 @@
  * @see <a href="https://github.com/Naguissa/uTimerBrokerLib">https://github.com/Naguissa/uTimerBrokerLib</a>
  * @see <a href="https://github.com/Naguissa/uTimerLib">https://github.com/Naguissa/uTimerLib</a> - Needed dependecy
  * @see <a href="mailto:naguissa@foroelectro.net">naguissa@foroelectro.net</a>
- * @version 1.0.1
+ * @version 1.0.2
  */
 /** \file uTimerBrokerLib.h
  *   \brief uTimerBrokerLib header file
@@ -26,6 +26,11 @@
 	#include "uTimerLib.h"
 
 
+    /**
+     * \brief UTIMERBROKERLIB_ERROR Error return value
+     *
+     * Return value of failed operations
+     */
     #define UTIMERBROKERLIB_ERROR 255
 
     #ifndef UTIMERBROKERLIB_MAXHOOKS
