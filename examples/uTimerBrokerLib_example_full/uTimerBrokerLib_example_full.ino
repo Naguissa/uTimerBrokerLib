@@ -60,7 +60,7 @@ void callbackSMS() {
         sms_counter++;
         break;
     }
-    // We should not use Serial or millis insede interrupts, but this is a example
+    // We should not use Serial or millis inside interrupts, but this is an example
     // We could set a volatile variable and use Serial on loop.
     if (sms_counter > 2) { // Skips last space
         sms_counter = 0;
